@@ -22,7 +22,6 @@ Then(/^I will see "(.*?)"$/) do |text|
   expect(page).to have_content(text)
 end
 
-
 Given(/^sign in as "(.*?)"$/) do |text|
   fill_in("player", :with => text)
   click_on("Submit")
@@ -33,7 +32,7 @@ When(/^I press on "(.*?)" as my weapon choice$/) do |button|
 end
 
 Then(/^I will see a result$/) do
-  expect(page).to have_content("draw")
+  expect(current_path).to eq '/result'
 end
 
 When(/^I press "(.*?)"$/) do |button|

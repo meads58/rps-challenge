@@ -1,7 +1,5 @@
 class GameResult
-
   attr_accessor :last_winner
-
 
   def initialize(umpire, player, computer)
     @umpire = umpire
@@ -24,16 +22,16 @@ class GameResult
 
 private
 
-    def check_weapons(weapons)
-      @winning_weapon = @umpire.rule_logic(weapons)
-    end
+  def check_weapons(weapons)
+    @winning_weapon = @umpire.rule_logic(weapons)
+  end
 
-    def result_headliner(winning_weapon)
-      if winning_weapon == :draw
-        "It's a draw"
-      else
-        "#{weapons_users[winning_weapon]} is the winner"
-      end
+  def result_headliner(winning_weapon)
+    if winning_weapon == :draw
+      "It's a draw"
+    else
+      "#{weapons_users[winning_weapon]} is the winner"
     end
+  end
 
 end

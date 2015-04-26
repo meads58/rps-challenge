@@ -1,5 +1,4 @@
 class ScoreCounter
-
   attr_reader :player_count
 
   def initialize

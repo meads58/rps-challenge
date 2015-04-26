@@ -5,7 +5,6 @@ require_relative '../lib/game_umpire'
 require_relative '../lib/game_weapons'
 require_relative '../lib/player'
 
-
 class RockPaperScissor < Sinatra::Base
   set :public_folder, Proc.new { File.join(root, '..', "public") }
   set :views, Proc.new { File.join(root, "..", "views") }
@@ -14,8 +13,6 @@ class RockPaperScissor < Sinatra::Base
   weapons = GameWeapons.new
   umpire = GameUmpire.new
 
-
-
   get '/' do
     erb :index
   end
@@ -23,7 +20,6 @@ class RockPaperScissor < Sinatra::Base
   get '/new_player' do
     erb :new_player
   end
-
 
   get '/begin' do
     erb :play_game
@@ -56,7 +52,5 @@ class RockPaperScissor < Sinatra::Base
     end
   end
 
-
-  # start the server if ruby file executed directly
   run! if app_file == $0
 end

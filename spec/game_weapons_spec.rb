@@ -4,7 +4,6 @@ describe GameWeapons do
 
   let(:weapons) {GameWeapons.new}
 
-
   it "is created with 3 weapons rock, paper and scissors" do
     expect(weapons.weapons).to match_array [:rock, :scissors, :paper]
   end

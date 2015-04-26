@@ -7,7 +7,6 @@ describe GameResult do
   let(:imac) {double :computer }
   let(:result) { GameResult.new(umpire, jim, imac) }
 
-
   it "can say 'player wins' when the player wins" do
     set_up_match_helper(:rock, :scissors, :rock)
     expect(result.announcement).to eq "Jim is the winner"
@@ -31,7 +30,5 @@ describe GameResult do
     allow(imac).to receive(:weapon).and_return(weapon_comp)
     allow(imac).to receive(:name).and_return("imac")
   end
-
-
 
 end

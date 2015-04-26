@@ -1,6 +1,5 @@
 class GameUmpire
 
-
   RESULTS = {
     [:rock, :scissors] => :rock,
     [:paper, :rock] => :paper,
