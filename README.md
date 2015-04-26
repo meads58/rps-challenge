@@ -1,8 +1,11 @@
 # Challenge: Rock, Paper, Scissors
+[![Code Climate](https://codeclimate.com/github/meads58/rps-challenge/badges/gpa.svg)](https://codeclimate.com/github/meads58/rps-challenge)
 
 Week 3 challenge using Ruby with the Sinatra framework to create my version of _Rock, Paper, Scissors_.
 
-Testing implemented with Cucumber and Capybara.
+# Testing
+- Feature tests implemented with Cucumber and Capybara.
+- Unit testing with rspec.
 
 # Implemented features:
 - player has to enter their name before the game
@@ -23,7 +26,7 @@ Testing implemented with Cucumber and Capybara.
 
 # Set-up
 - Clone and run the Gemfile.
-- Rack up
+- run 'rackup' from the console.
 
 # Live Version
 [Play it now](https://warm-inlet-3430.herokuapp.com)
