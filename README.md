@@ -1,7 +1,7 @@
 # Challenge: Rock, Paper, Scissors
 [![Code Climate](https://codeclimate.com/github/meads58/rps-challenge/badges/gpa.svg)](https://codeclimate.com/github/meads58/rps-challenge)
 
-Week 3 challenge using Ruby with the Sinatra framework to create my version of _Rock, Paper, Scissors_.
+Week 3 challenge using Ruby with the Sinatra web framework to create my version of _Rock, Paper, Scissors_.
 
 # Testing
 - Feature tests implemented with Cucumber and Capybara.
